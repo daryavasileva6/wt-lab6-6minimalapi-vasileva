@@ -9,12 +9,10 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Замени блок с MapOpenApi на этот:
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+
 
 // ... остальной код с эндпоинтами ...
 
